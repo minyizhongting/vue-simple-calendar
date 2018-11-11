@@ -31,6 +31,11 @@ Tips：
 
 * confirm: 日历确定事件
 
+组件示例如下图。
+
+![demo.png](https://github.com/minyizhongting/vue-simple-calendar/blob/master/src/assets/demo.png)
+
+
 
 ## Install
 
