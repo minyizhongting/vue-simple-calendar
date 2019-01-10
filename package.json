@@ -1,19 +1,32 @@
 {
-  "name": "vue-simple-calendar",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@minyizhongting/vue-simple-calendar",
+  "version": "0.1.3",
+  "private": false,
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minyizhongting/vue-simple-calendar.git"
+  },
+  "author": {
+    "name": "minyizhongting",
+    "email": "baihe085@126.com"
+  },
+  "keywords": [
+    "vue",
+    "calendar"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "iview": "^3.2.1",
+    "moment": "^2.23.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",
     "@vue/cli-service": "^3.1.1",
-    "iview": "^3.1.5",
-    "moment": "^2.22.2",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.17"

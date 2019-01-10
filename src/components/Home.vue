@@ -1,6 +1,6 @@
 <template>
   <div class="vue-home">
-    <single-calendar
+    <vue-simple-calendar
       :show="show"
       :current="current"
       :first-day="firstDay"
@@ -8,7 +8,7 @@
       :default-range="defaultRange"
       @cancel="cancel"
       @confirm="confirm"
-    ></single-calendar>
+    ></vue-simple-calendar>
     <div class="choose-time">
       <label>开始时间</label>
       <div class="result" @click="showCalendar">
@@ -25,9 +25,9 @@
 <script>
   import moment from 'moment'
   import utils from '../libs/utils'
-  import SingleCalendar from './SingleCalendar'
+  import VueSimpleCalendar from './SimpleCalendar'
   export default {
-    components: { SingleCalendar },
+    components: { VueSimpleCalendar },
     data() {
       return {
         show: false,
