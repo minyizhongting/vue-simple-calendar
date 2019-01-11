@@ -5,7 +5,7 @@
 ## Usage
 
 ```javascript
-<simple-calendar
+<vue-simple-calendar
       :show="true"
       :current="'2018-11-11'"
       :first-day="0"
@@ -13,7 +13,7 @@
       :default-range="'2018-10-01 2050-03-20'"
       @cancel="cancel"
       @confirm="confirm"
-></simple-calendar>
+></vue-simple-calendar>
 ```
 
 Tips：
