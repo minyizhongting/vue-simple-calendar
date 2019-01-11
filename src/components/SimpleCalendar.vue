@@ -64,9 +64,8 @@
       }
     },
     watch: {
-      current: {
-        immediate: true,
-        handler () {
+      show(newVal) {
+        if (newVal) {
           this.currentDay = this.current;
         }
       }
