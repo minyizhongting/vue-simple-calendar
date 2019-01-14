@@ -26,7 +26,8 @@
         type: Boolean
       },
       current: {
-        type: String
+        type: String,
+        default: moment().format('YYYY-MM-DD')
       },
       defaultRange: {
         type: String,
@@ -43,7 +44,8 @@
             console.error('moment() should in this default range.');
             return false;
           }
-        }
+        },
+        default: '2018-10-01 2050-03-20'
       },
       firstDay: {
         type: Number | String,
@@ -64,9 +66,12 @@
       }
     },
     watch: {
-      show(newVal) {
-        if (newVal) {
-          this.currentDay = this.current;
+      show: {
+        immediate: true,
+        handler: function(newVal) {
+          if (newVal) {
+            this.currentDay = this.current;
+          }
         }
       }
     },
@@ -85,6 +90,9 @@
 </script>
 
 <style lang="scss">
+  body {
+    font-size: initial;
+  }
   .calendar-wrap {
     position: fixed;
     top: 0;
