@@ -90,9 +90,6 @@
 </script>
 
 <style lang="scss">
-  body {
-    font-size: initial;
-  }
   .calendar-wrap {
     position: fixed;
     top: 0;
